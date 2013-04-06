@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         colors="false"
+         bootstrap="bootstrap.php"
+        >
+    <php>
+        <!--
+            Dropbox_Credential_Email, Dropbox_Credential_Password
+
+            Credentials for your Dropbox Test-Account, those are the ones you use
+            to login to the Dropbox website.
+        -->
+        <var name="Dropbox_Credential_Email"
+             value="" />
+        <var name="Dropbox_Credential_Password"
+             value="" />
+
+        <!--
+            Dropbox_CaCertificateDir
+        -->
+        <var name="Dropbox_CaCertificateDir"
+             value=""/>
+
+        <!--
+            Dropbox_CaCertificateFile
+
+            CA Certificate File if not configured on your system. e.g.
+
+                "C:\Program Files\Git\bin\curl-ca-bundle.crt"
+
+            if you are using git bash under Windows.
+        -->
+        <var name="Dropbox_CaCertificateFile"
+             value=""/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Integration-Tests">
+            <directory>integration</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
