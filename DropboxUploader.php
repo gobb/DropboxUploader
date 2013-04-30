@@ -25,7 +25,7 @@
  * @author Jaka Jancar [jaka@kubje.org] [http://jaka.kubje.org/]
  * @version 1.1.12
  */
-class DropboxUploader {
+final class DropboxUploader {
     /**
      * Certificate Authority Certificate source types
      */
